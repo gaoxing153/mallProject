@@ -1,0 +1,95 @@
+/* pages/goods_detail/goods_detail.wxss */
+page{
+  padding-bottom: 90rpx;
+}
+swiper{
+  height: 60vw;
+ 
+  text-align: center;
+  /* height:calc(750rpx*340/750) */
+}
+.swiper_item > image{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 60%;
+}
+.goods_price{
+  padding: 15rpx;
+  font-size: 32rpx;
+  font-weight:600;
+  color: var(--themeColor);
+}
+.goods_name_row{
+  display: flex;
+  padding:0 0 10rpx 0;
+  border-bottom: 10rpx solid #dedede;
+}
+.goods_name{
+  flex:4;
+  color: #000;
+  font-size: 28rpx;
+  padding: 0 10rpx;
+  border-right: 1rpx solid #000;
+}
+.goods_collect{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.goods_info_title{
+  font-size: 32rpx;
+  color: var(--themeColor);
+  font-weight: 600;
+  padding: 20rpx;
+}
+.btm_tool{
+  position: fixed;
+  left: 0;
+  bottom:0;
+  width: 100%;
+  height: 90rpx;
+  background-color:#fff;
+  display: flex;
+}
+.tool_item{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  position: relative;
+}
+.tool_item > button{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.tool_item_jion{
+  flex:2;
+  background-color:#ffa500;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.tool_item_shop{
+  flex:2;
+  background-color:var(--themeColor);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  font-weight: 600;
+}

@@ -1,0 +1,46 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="feedback">
+  <Tabs class="order_list_tabs" tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+    <block
+      wx:for="{{tabs}}"
+      wx:for-item="item"
+      wx:for-index="index"
+      wx:if="{{item.isActive}}"
+      wx:key="id"
+    >
+      <view class="problem">问题的种类</view>
+      <view class="problem_name">
+        <view class="problem_item"
+          wx:for="{{item.problem_list}}"
+          wx:for-item="item1"
+          wx:for-index="index1"
+          wx:key="id"
+        >
+          {{item1.title}}
+        </view>
+      </view>
+      <view class="problem_description">
+        <textarea class="description" placeholder="请描述你的问题" value="{{textval}}" bindinput="handleinput">
+        </textarea>
+        <view class="tool_btn">
+            <button bindtap="handleChooseImage">+</button>
+            <view class="up_img"
+            wx:for="{{img_list}}"
+            wx:key="*this"
+            bindtap = "delete_img"
+            data-index="{{index}}"
+            >
+              <UpImg src="{{item}}" class="item_img">
+              </UpImg>
+            </view>
+        </view>
+        <view class="from_btn">
+          <button type="warn" bindtap="handle_from_submit">
+            <icon type="success_no_circle" size="20" color="white"></icon>
+            提交
+          </button>
+        </view>
+      </view> 
+    </block>
+  </Tabs>
+</view>

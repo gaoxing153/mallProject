@@ -1,0 +1,52 @@
+<!--pages/user/user.wxml-->
+<!-- <navigator url="/pages/login/login">登录</navigator> -->
+<view class="my">
+  <view wx:if="{{!userinfo.nickName}}" class="user_login">
+    <navigator class="login" url="/pages/login/login">登录</navigator>
+  </view>
+  <view wx:else class="user_img_wrap">
+    <image class="user_bg" src="{{userinfo.avatarUrl}}"></image>
+    <view class="user_info">
+      <image class="user_icon" src="{{userinfo.avatarUrl}}"></image>
+      <view class="user_name">{{userinfo.nickName}}</view>
+    </view>
+  </view>
+  <view class="info_content">
+    <view class="collect_info">
+      <navigator class="">
+        <view>0</view>
+        <view> 收藏的店铺</view>
+     </navigator>
+      <navigator class="">
+        <view>0</view>
+        <view> 收藏的商品</view>
+      </navigator>
+      <navigator class="">
+        <view>0</view>
+        <view> 关注的商品</view>
+      </navigator>
+      <navigator class="">
+        <view>0</view>
+        <view> 我的足迹</view>
+      </navigator>
+    </view>
+    <view class="order">我的订单</view>
+    <view class="order_info">
+      <navigator class="iconfont icon-quanbudingdan" url="/pages/order/order?type=1">全部订单</navigator>
+      <navigator class="iconfont icon-daifukuan" url="/pages/order/order?type=2">待付款</navigator>
+      <navigator class="iconfont icon-daishouhuo" url="/pages/order/order?type=3">待收货</navigator>
+      <navigator class="iconfont icon-tubiao-">退款/退货</navigator>
+    </view>
+    <view class="address_mana"><text>收货地址管理</text></view>
+    <view class="info_feedback">
+      <view class="Service">
+        <view class="Ser_name">联系客服</view>
+        <view class="Ser_telphone">400-618-4000</view>
+      </view> 
+      
+      <navigator class="feedback" url="/pages/feedback/feedback">意见反馈</navigator>
+      <view class="about">关于我们</view>
+    </view>
+    <view class="recommend"><text>把应用推荐给其他人</text></view>
+  </view>
+</view>

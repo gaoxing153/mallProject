@@ -1,0 +1,60 @@
+/* pages/feedback/feedback.wxss */
+page{
+  background-color:#eeeeee;
+}
+.problem{
+  padding: 10rpx;
+}
+.problem_name{
+  display: flex;
+  flex-wrap:wrap;
+  margin:10rpx 60rpx;
+}
+.problem_item{
+  width: 30%;
+  font-size: 30rpx;
+  padding: 10rpx 0;
+  margin: 10rpx;
+  text-align: center;
+  background-color: #fff;
+  
+}
+.problem_description{
+  margin:20rpx;
+}
+.description{
+  background-color: #fff;
+  width: 100%;
+}
+.tool_btn{
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 15rpx;
+}
+.tool_btn > button{
+  width:90rpx;
+  height: 90rpx;
+  padding:0;
+  margin:15rpx;
+  font-size: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.up_img{
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+}
+.from_btn{
+  /* margin-left: 470rpx; */
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.from_btn > button{
+  margin:0;
+  height: 90rpx;
+  width: 270rpx;
+}

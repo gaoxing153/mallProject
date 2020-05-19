@@ -1,0 +1,14 @@
+<!--pages/order//order.wxml-->
+<view class="order">
+   <Tabs class="order_list_tabs" tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+    <block
+      wx:for="{{tabs}}"
+      wx:for-item="item"
+      wx:for-index="index"
+      wx:if="{{item.isActive}}"
+      wx:key="id"
+    >
+    内容
+    </block>
+  </Tabs>
+</view>

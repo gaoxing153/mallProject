@@ -1,0 +1,137 @@
+/* pages/user/user.wxss */
+.my{
+  background-color: #ccc;
+}
+.user_info_wrap{
+
+  /* background-color: var(--themeColor); */
+}
+.user_login{
+  height: 45vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: var(--themeColor);
+}
+.login{
+  font-size: 40rpx;
+  color: green;
+  padding: 40rpx;
+  width: 60%;
+  height: 30%;
+  margin-top: 10%;
+  font-weight: 600;
+  border:5rpx solid green;
+  text-align: center;
+}
+.user_img_wrap{
+  position: relative;
+}
+.user_bg{
+   height: 45vh;
+   /* 高斯模糊 */
+   filter: blur(10rpx)
+}
+.user_info{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top:20%;
+  text-align: center;
+}
+.user_icon{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user_name{
+  color: #fff;
+  margin-top: 40rpx;
+  font-size: 40rpx;
+}
+.info_content{
+
+  position: relative;
+  width: 95%;
+  left: 20rpx;
+  top:-30rpx;
+  bottom: 100rpx;
+}
+/* .info_content > view{
+  padding: 15rpx 0;
+} */
+.collect_info{
+  display: flex;
+}
+.collect_info > navigator{
+  padding: 15rpx 0;
+  flex:1;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.order{
+  margin-top: 15rpx;
+  padding: 15rpx;
+  font-size: 30rpx;
+  background-color: #fff;
+  border-bottom:1rpx solid #ccc;
+}
+.order_info{
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  border-bottom:1rpx solid #ccc;
+}
+.order_info navigator{
+  padding: 15rpx 0;
+  flex:1;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.address_mana{
+  margin: 15rpx 0 0 0;
+  padding: 15rpx;
+  font-size: 30rpx;
+  background-color: #fff;
+  border-bottom:1rpx solid #ccc;
+}
+
+.info_feedback{
+  margin-top: 15rpx;
+}
+.info_feedback > view{
+    padding: 15rpx;
+  font-size: 30rpx;
+  background-color: #fff;
+  border-bottom:1rpx solid #ccc;
+}
+.feedback{
+  padding: 15rpx;
+  font-size: 30rpx;
+  background-color: #fff;
+  border-bottom:1rpx solid #ccc;
+}
+.Service{
+  display: flex;
+  justify-content: space-between;
+}
+.feedback{
+
+}
+.about{
+
+}
+.recommend{
+  padding: 15rpx;
+  margin-top: 15rpx;
+  font-size: 30rpx;
+  background-color: #fff;
+}

@@ -1,0 +1,50 @@
+.Cates_container{
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+.menu_item{
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.active{
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
+.leftMenu{
+  flex:2;
+  width: 25%;
+  /* background:#f1f; */
+}
+.rightContent{
+  width: 75%;
+  flex:5;
+  /* background:#ababab */
+}
+.delimiter{
+  color: #ccc;
+  padding: 0 10rpx;
+}
+.content_item_title{
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.children_content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.children_content_item{
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  text-align: center;
+}
+.children_content_item > image{
+  /* width: 33%; */
+  width: 50%;
+}

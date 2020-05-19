@@ -1,0 +1,21 @@
+<!--pages/search/search.wxml-->
+<view class="searchInput">
+<!-- 查询输入 -->
+  <view class="input_value">
+    <input class="input_content"  bindinput="handleInput" value="{{input_value}}" placeholder="请输入你想搜索的商品"></input>
+    <button hidden="{{!isShow}}" class="input_ensure" bindtap="cancel">取消</button>
+  </view>
+  <!-- 查询结果 -->
+  <view class="search_result">
+    <navigator class="result_item"
+      wx:for="{{goods}}"
+      wx:for-item="item"
+      wx:for-index="index"
+      wx:key="goods_id"
+      url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}"
+    >
+      {{item.goods_name}}
+    </navigator>
+  </view>
+</view>
+

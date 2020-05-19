@@ -1,0 +1,50 @@
+<!--pages/pay/pay.wxml-->
+<view class="pay">
+  <view class="pay_content">
+      <view class="pay_title">购物车</view>
+      <view class="pay_main">
+        <view class="pay_item"
+          wx:for="{{pay_list}}"
+          wx:for-item="item"
+          wx:for-index="index"
+          wx:key="goods_id"
+        > 
+          <view class="item_info">
+          <!--商品图片-->
+            <navigator url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}" class="goods_logo">
+              <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+            </navigator>
+            <!-- 商品信息 -->
+            <view class="goods_info">
+              <view class="goods_name">
+                {{item.goods_name}}
+              </view>
+              <view class="priceNum">
+                <view class="goods_price">
+                  <text>￥</text>{{item.goods_price}}
+                </view>
+                <view class="goods_number">
+                  <view class="fuhao">X</view>
+                  <view class="number">{{item.num}}</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+  <view class="footer_tool">
+    <view class="all_checked">
+    </view>
+    <view class="price_total">
+      <view>合计:</view>
+      <view class="money">
+        <view class="money_number">￥{{money}}</view>
+        <view>包含运费</view>
+      </view>
+    </view>
+    <view class="pay_money" bindtap="handlePay">
+      支付（{{num_total}}）
+    </view>
+  </view>
+</view>
